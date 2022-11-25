@@ -59,9 +59,50 @@ function problem111(){
 	
 }
 
-function problem2(){
+function problem112(){
+	var inputData = [{
+		'upstream':25,
+		'downstream': 55
+		},
+		{
+		'upstream':76,
+		'downstream': 89
+		},
+		{
+		'upstream':90,
+		'downstream': 50
+		},
+		{
+		'upstream':35,
+		'downstream': 25
+		}],
+		randomIndex = getRandomNumber(inputData.length),
+		upstream= inputData[randomIndex]['upstream'],
+		downstream = inputData[randomIndex]['downstream'],
+		water,
+		question = {};
+		
+	
+	water=(upstream+downstream)/2;
+
+	question = {
+		'type': 'single',
+		'id': 112,
+		'question': 'A man can row upstream at' + upstream + ' kmph and downstream at' + downstream + 'kmph, and then find the speed of the man in still water?' ,
+		'options': {
+			'A': water + parseInt(Math.random()*10),
+			'B': water + parseInt(Math.random()*10),
+			'C': water,
+			'D': water - parseInt(Math.random()*10)
+		},
+		'answer': 'c',
+		'author-id': 112
+	}
+	
+	return question;
 	
 }
+
 
 function problem3(){
 	
