@@ -7,32 +7,32 @@ function getRandomNumber(max){
 
 function problem111(){
 	var inputData = [{
-		'speed':80,
+		'speed1':80,
 		'time': 10,
-		'distance': 4
+		'time2': 4
 		},
 		{
-		'speed':50,
+		'speed1':50,
 		'time': 60,
-		'distance': 5
+		'time2': 5
 		},
 		{
-		'speed':70,
+		'speed1':70,
 		'time': 60,
-		'distance': 2
+		'time2': 2
 		},
 		{
-		'speed':40,
+		'speed1':40,
 		'time': 20,
-		'distance': 3
-		},
-		],
-		
-
+		'time2': 3
+		}],
 		randomIndex = getRandomNumber(inputData.length),
-		speed= inputData[randomIndex]['speed'],
+		speed1= inputData[randomIndex]['speed1'],
 		time = inputData[randomIndex]['time'],
-		distance = inputData[randomIndex]['distance'],
+		time2 = inputData[randomIndex]['time2'],
+		distance,
+		speed2,
+		increased_speed,
 		question = {};
 		
 	
@@ -42,9 +42,9 @@ function problem111(){
 
 	question = {
 		'type': 'single',
-		'id': '111',
-		'question': 'A car covers its journey at the speed of'+ 80+' km/hour in' + 10 +' hours. If the same distance is to be covered in'+ 4 + 
-					'hours, by how much the speed of car will have to increase?',
+		'id': 111,
+		'question': 'A car covers its journey at the speed of' + speed1 + ' km/hour in' + time +' hours. If the same distance is to be covered in'
+						+ time2 + 'hours, by how much the speed of car will have to increase?',
 		'options': {
 			'A': increased_speed,
 			'B': increased_speed - parseInt(Math.random()*10),
@@ -52,7 +52,7 @@ function problem111(){
 			'D': increased_speed - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '111'
+		'author-id': 111
 	}
 	
 	return question;
