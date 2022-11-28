@@ -238,23 +238,23 @@ function problem115(){
 }
 function problem116(){
 	var inputData = [{
-		'sellprofit':8,
-		'costprofit': 30,
+		'children':8,
+		'age': 30,
 		'years':3
 		},
 		{
-		'sellprofit':6,
-		'costprofit': 50,
+		'children':6,
+		'age': 50,
 		'years':3
 		},
 		{
-		'sellprofit':7,
-		'costprofit': 40,
+		'children':7,
+		'age': 40,
 		'years':3
 		},
 		{
-		'sellprofit':5,
-		'costprofit': 80,
+		'children':5,
+		'age': 80,
 		'years':3
 		}],
 		randomIndex = getRandomNumber(inputData.length),
@@ -563,7 +563,7 @@ function problem1111(){
 		
 	
 	
-	change=[rate/(100-rate)*100]
+	change=(rate/(100-rate)*100);
 
 	question = {
 		'type': 'single',
@@ -829,7 +829,7 @@ function problem1116(){
 		'question': + typist + 'typists can type' + pages + 'pages in' + hours + 
 					'hours.Find the average number of pages typed by each typist in an hour.',
 		'options': {
-			'A': total - parseInt(Math.random()*10),
+			'A': total + parseInt(Math.random()*10),
 			'B': total - parseInt(Math.random()*10),
 			'C': total + parseInt(Math.random()*10),
 			'D': total
