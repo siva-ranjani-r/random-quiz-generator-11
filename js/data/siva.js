@@ -3,7 +3,7 @@ function getRandomNumber(max){
 	randomNumber = parseInt(randomNumber);
 	return randomNumber;
 }
-function problem111(){
+function problem1101(){
 	var inputData = [{
 		'speed1':80,
 		'time': 10,
@@ -40,7 +40,7 @@ function problem111(){
 
 	question = {
 		'type': 'single',
-		'id': '111',
+		'id': '1101',
 		'question': 'A car covers its journey at the speed of' + speed1 + ' km/hour in' + time +' hours. If the same distance is to be covered in'
 						+ time2 + 'hours, by how much the speed of car will have to increase?',
 		'options': {
@@ -50,13 +50,13 @@ function problem111(){
 			'D': increased_speed - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '111'
+		'author-id': '1101'
 	}
 	
 	return question;
 	
 }
-function problem112(){
+function problem1102(){
 	var inputData = [{
 		'upstream':25,
 		'downstream': 55
@@ -84,7 +84,7 @@ function problem112(){
 
 	question = {
 		'type': 'single',
-		'id': '112',
+		'id': '1102',
 		'question': 'A man can row upstream at' + upstream + ' kmph and downstream at' + downstream + 'kmph, and then find the speed of the man in still water?' ,
 		'options': {
 			'A': water + parseInt(Math.random()*10),
@@ -93,13 +93,14 @@ function problem112(){
 			'D': water - parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '112'
+		'author-id': '1102'
 	}
 	
 	return question;
 	
 }
-function problem113(){
+
+function problem1103(){
 	var inputData = [{
 		'speed':75,
 		'time': 30
@@ -129,7 +130,7 @@ function problem113(){
 
 	question = {
 		'type': 'single',
-		'id': '113',
+		'id': '1103',
 		'question': 'What distance will be covered by a bus moving at'+ speed +' kmph in' + time +' seconds?' ,
 		'options': {
 			'A': distance - parseInt(Math.random()*10),
@@ -138,13 +139,13 @@ function problem113(){
 			'D': distance - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '113'
+		'author-id': '1103'
 	}
 	
 	return question;
 	
 }
-function problem114(){
+function problem1104(){
 	var inputData = [{
 		'percentage':20,
 		'oranges': 180
@@ -177,7 +178,7 @@ function problem114(){
 
 	question = {
 		'type': 'single',
-		'id': '114',
+		'id': '1104',
 		'question': 'A fruit seller had some oranges. He sells' + percentage + 'oranges and still has' + oranges + ' oranges. Originally, he had?' ,
 		'options': {
 			'A': original - parseFloat(Math.random()*10),
@@ -186,13 +187,13 @@ function problem114(){
 			'D': original
 		},
 		'answer': 'D',
-		'author-id': '114'
+		'author-id': '1104'
 	}
 	
 	return question;
 	
 }
-function problem115(){
+function problem1105(){
 	var inputData = [{
 		'sellprofit':680,
 		'costprofit': 400
@@ -221,7 +222,7 @@ function problem115(){
 
 	question = {
 		'type': 'single',
-		'id': '115',
+		'id': '1105',
 		'question':'An article is bought for Rs.' + sellprofit + 'and sold for Rs.' + costprofit + '. What is the gain percentage?',
 		'options': {
 			'A': profit_percentage - parseFloat(Math.random()*10),
@@ -230,13 +231,13 @@ function problem115(){
 			'D': profit_percentage + parseInt(Math.random()*10)
 		},
 		'answer': 'C',
-		'author-id': '115'
+		'author-id': '1105'
 	}
 	
 	return question;
 	
 }
-function problem116(){
+function problem1106(){
 	var inputData = [{
 		'children':8,
 		'age': 30,
@@ -273,7 +274,7 @@ function problem116(){
 
 	question = {
 		'type': 'single',
-		'id': '116',
+		'id': '1106',
 		'question':'The sum of ages of'+ children + 'children born at the intervals of' + years + 'years each is'+ age + 'years. What is the age of the youngest child?',
 		'options': {
 			'A': young - parseFloat(Math.random()*10),
@@ -282,13 +283,13 @@ function problem116(){
 			'D': young - parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '116'
+		'author-id': '1106'
 	}
 	
 	return question;
 	
 }
-function problem117(){
+function problem1107(){
 	var inputData = [{
 		'average':10,
 		'bijoy': 2,
@@ -324,7 +325,7 @@ function problem117(){
 
 	question = {
 		'type': 'single',
-		'id': '117',
+		'id': '1107',
 		'question':'The average chandru of'+average+' men is bijoy by'+bijoy+'kg when one of them whose chandru is'+chandru+ 
 					'kg is replaced by a new man. What is the chandru of the new man?',
 		'options': {
@@ -334,13 +335,13 @@ function problem117(){
 			'D': new_man - parseInt(Math.random()*10)
 		},
 		'answer': 'A',
-		'author-id': '117'
+		'author-id': '1107'
 	}
 	
 	return question;
 	
 }
-function problem118(){
+function problem1108(){
 	var inputData = [{
 		'average':50,
 		'years': 35,
@@ -387,7 +388,7 @@ function problem118(){
 
 	question = {
 		'type': 'single',
-		'id': '118',
+		'id': '1108',
 		'question':'The average age of' + average + 'boys in a class is'+ years + 'years. If we include the age of' + teacher + 
 		'teachers, the average age increases by' + years_teacher + ' . What is the sum of ages of the two teachers?',
 		'options': {
@@ -397,13 +398,13 @@ function problem118(){
 			'D': includes
 		},
 		'answer': 'D',
-		'author-id': '118'
+		'author-id': '1108'
 	}
 	
 	return question;
 	
 }
-function problem119(){
+function problem1109(){
 	var inputData = [{
 		'male_count':2,
 		'female_count': 2,
@@ -452,7 +453,7 @@ function problem119(){
 
 	question = {
 		'type': 'single',
-		'id': '119', 
+		'id': '1109', 
 		'question':'A group consists of' + male_count+ 'male,' + female_count + 'female and'+ children_count + 
 					'children. The average age of the male is' + male_one +'years, that of the female is' + female_two + 
 					'years, and that of the children is' + children + 'years. What is the average age of the group?',
@@ -463,7 +464,7 @@ function problem119(){
 			'D': group + parseInt(Math.random()*10)
 		},
 		'answer': 'B',
-		'author-id': '119'
+		'author-id': '1109'
 	}
 	
 	return question;
